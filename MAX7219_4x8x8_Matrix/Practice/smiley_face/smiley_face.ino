@@ -29,7 +29,7 @@ void loop() {
   smiley_face(2);
   smiley_face(3);
   delay(1000);
-  clearDisplayAll();
+  lc.clearDisplayAll();
   
 }
 
@@ -46,16 +46,6 @@ void builtin_blink(int c) {
     digitalWrite(LED_BUILTIN,HIGH);
     delay(50);
   }
-}
-
-/**
- * Clears the display on all the matrices.
- */
-void clearDisplayAll() {
-  lc.clearDisplay(0);
-  lc.clearDisplay(1);
-  lc.clearDisplay(2);
-  lc.clearDisplay(3);
 }
 
 /*
