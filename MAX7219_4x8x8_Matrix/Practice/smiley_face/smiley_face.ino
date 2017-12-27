@@ -5,6 +5,7 @@
  */
 
 #include "LedControl.h"
+LedControl lc = LedControl(12,11,10,4);
 
 void setup() {
 
