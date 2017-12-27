@@ -9,7 +9,7 @@
 int NUM_MAT = 4;
 int NUM_ROW = 8;
 int NUM_COL = 8;
-//LedControl lc = LedControl(12,11,10,NUM_MAT);
+LedControl lc = LedControl(12,11,10,NUM_MAT);
 
 void setup() {
 
