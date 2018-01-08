@@ -84,6 +84,11 @@ void loop() {
  * @return the direction of the joystick
  */
 int getDirection(int x, int y) {
+  /*
+   * Can improve by using coordinate system.
+   * Get the angle of the point with respect to the origin (512x512)
+   * If distance is greater than some threshold, return 1/2/3/4 depending on the angle.
+   */
   int error = 75;
   if ((abs(MAX_XY_VALUE - x) < error) and (abs(MID_XY_VALUE - y) < error)) {
     return 1;
